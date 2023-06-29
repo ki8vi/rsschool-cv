@@ -4,7 +4,7 @@
     + LinkedIn: [https://www.linkedin.com/in/ki8vi/]("https://www.linkedin.com/in/ki8vi/")
     + Telegram: [@keepinminded]("@keepinminded")
     + E-mail: oneofbln@gmail.com
-  
+    + Discord: KimV(@ki8vi)
    
 ***
 * About me:
