@@ -49,6 +49,7 @@ In my life, I have worked in various fields, each of which has provided me with 
     }
     console.log(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12])) // -> 12
     ```
+    
 ---
 
 + Education:
