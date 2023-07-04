@@ -15,7 +15,9 @@ body {
 .container-header {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: rgba(13, 4, 38, 0.934);
+    background-color: brown;
+    height: 60px;
+    color: white;
 }
 .nav {
     display: flex;
@@ -51,4 +53,19 @@ body {
 }
 .name {
     margin-top: 5px;
+}
+
+.container-footer {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: brown;
+}
+.rs-logo {
+    width: 90px;
+}
+.git-logo {
+    width: 80px;
 }
