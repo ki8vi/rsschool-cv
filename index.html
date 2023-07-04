@@ -44,18 +44,59 @@
             </section>
             <section class="code" id="code">
                 <h2>My code</h2>
+                <p>Find Highest Rank Number in an Array</p>
+                <code><pre>
+                    function highestRank(arr) {
+                        let out = []
+                        let hsh = {}
+                        for(let i = 0; i &lt; arr.length; i++) {
+                            if(!hsh[arr[i]]) {
+                            hsh[arr[i]] = 1
+                            } else {
+                            hsh[arr[i]]++
+                            }
+                        }
+                        arr = Object.entries(hsh)
+                        const maxVal = Object.values(hsh).sort((a, b) => b-a)[0]
+                        for(let i = 0; i &lt; arr.length; i++) {
+                            if(arr[i][1] === maxVal) {
+                            out.push(+arr[i][0])
+                            }
+                        }
+                          return Math.max(...out)
+                        }
+                        console.log(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12])) // -> 12
+                </pre></code>
             </section>
             <section class="education" id="education">
                 <h2>Education</h2>
+                <ul>
+                    <li>Turan Universtity - Jurisprudence</li>
+                    <li><a href="https://www.freecodecamp.org/certification/KimV/javascript-algorithms-and-data-structures">FreeCodeCamp - JavaScript Algorithms and Data Structures</a></li>
+                </ul>
             </section>
             <section class="Projects" id="projects">
                 <h2>Projects</h2>
+                <ul>
+                    <li><a href="https://ki8vi.github.io/snake/" target="_blank">Snake - Pure JS</a></li>
+                    <li><a href="https://ki8vi.github.io/shop/" target="_blank">Store - React JS</a></li>
+                    <li><a href="https://ki8vi.github.io/didOrNot/" target="_blank">Task manager - Pure JS</a></li>
+                </ul>
             </section>
             <section class="language" id="language">
                 <h2>Languages</h2>
+                <ul>
+                    <li>English: intermediate</li>
+                    <li>Korean: pre-intermediate</li>
+                </ul>
             </section>
             <section class="contacts" id="contacts">
                 <h2>Contacts</h2>
+                <ul>
+                    <li><a href="mailto:oneofbln@gmail.com" target="_blank">E-mail</a></li>
+                    <li><a href="https://t.me/keepinminded" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.linkedin.com/in/ki8vi/" target="_blank">Linkedin</a></li>
+                </ul>
             </section>
         </div>
     </main>
