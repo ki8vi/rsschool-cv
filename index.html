@@ -82,28 +82,29 @@
             <section class="code" id="code">
                 <h2>My code</h2>
                 <p>Find Highest Rank Number in an Array</p>
-                    <code class="func">
-                        function highestRank(arr) {<br>
-                        let out = []<br>
-                        let hsh = {}<br>
-                        for(let i = 0; i &lt; arr.length; i++) {<br>
-                            if(!hsh[arr[i]]) {<br>
-                            hsh[arr[i]] = 1<br>
-                            } else {<br>
-                            hsh[arr[i]]++<br>
-                            }<br>
-                        }<br>
-                        arr = Object.entries(hsh)<br>
-                        const maxVal = Object.values(hsh).sort((a, b) => b-a)[0]<br>
-                        for(let i = 0; i &lt; arr.length; i++) {<br>
-                            if(arr[i][1] === maxVal) {<br>
-                            out.push(+arr[i][0])<br>
-                            }<br>
-                        }<br>
-                            return Math.max(...out)<br>
-                        }<br>
-                        console.log(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12])) // -> 12
-                    </code>
+<pre>
+ <code class="func">
+function highestRank(arr) {<br>
+let out = []
+let hsh = {}
+for(let i = 0; i &lt; arr.length; i++) {
+    if(!hsh[arr[i]]) {
+    hsh[arr[i]] = 1
+    } else {
+    hsh[arr[i]]++
+    }
+}
+arr = Object.entries(hsh)
+const maxVal = Object.values(hsh).sort((a, b) => b-a)[0]
+for(let i = 0; i &lt; arr.length; i++) {
+    if(arr[i][1] === maxVal) {
+    out.push(+arr[i][0])
+    }
+}
+    return Math.max(...out)
+}
+ </code>
+</pre>
             </section>
         </div>
     </main>

@@ -24,14 +24,13 @@ a {
     color: black;
 }
 a:hover {
-    color: white;
+    color: rgba(219, 215, 10, 0.968);
     transition: .5s;
 }
 .container-header {
     max-width: 1440px;
     margin: 0 auto;
     background-color: brown;
-    color: white;
     font-size: 18px;
 }
 .nav {
@@ -87,6 +86,9 @@ a:hover {
     justify-content: space-between;
     gap: 30px;
     padding: 50px;
+    background-image: url(./assets/img/11045763_13338.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container-about {
     max-width: 1440px;
