@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(157, 60, 4, 0.29);
+    box-shadow: 3px 5px 3px rgb(99, 97, 97);
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    font-family: 'Belanosima', sans-serif;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: rgba(219, 215, 10, 0.968);
+    transition: .5s;
+}
+.container-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: brown;
+    font-size: 18px;
+}
+.nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    gap: 20px;
+    height: 60px;
+    align-items: center;
+    color: white;
+}
+
+.img {
+    width: 250px;
+    border-radius: 50%;
+    border: 15px solid rgba(13, 4, 38, 0.934);
+}
+
+.main {
+    background-color: rgb(204, 216, 227);
+}
+
+.profile {
+    width: calc(50% - 30px);
+}
+.about {
+    width: calc(50% - 20px);
+}
+.skills {
+    width: calc(50% - 20px);
+}
+.code {
+    width: calc(50% - 20px);
+}
+.education {
+    width: calc(50% - 20px);
+}
+.projects {
+    width: calc(50% - 20px);
+}
+.language {
+    width: calc(50% - 20px);
+}
+.contacts {
+    width: calc(50% - 20px);
+}
+
+.container-main {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    background-image: url(./assets/img/11045763_13338.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-about {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.photo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name {
+    font-size: 25px;
+}
+
+.title {
+    padding-left: 30px;
+}
+.js {
+    background-color: antiquewhite;
+    padding: 0;
+    margin: 2;
+}
+
+.container-footer {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    gap: 30px;
+    background-color: brown;
+}
+.rs-logo {
+    width: 90px;
+}
+.git-logo {
+    width: 80px;
+}
