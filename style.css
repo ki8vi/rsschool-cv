@@ -11,9 +11,9 @@ html {
 }
 
 body {
-    width: 1000px;
+    max-width: 1440px;
     min-width: 320px;
-    min-height: 100vh;
+    width: 1000px;
     margin: 0 auto;
     background-color: rgba(157, 60, 4, 0.29);
     box-shadow: 3px 5px 3px rgb(99, 97, 97);
@@ -33,7 +33,6 @@ a:hover {
     background-color: brown;
     color: white;
     font-size: 18px;
-    
 }
 .nav {
     display: flex;
@@ -54,18 +53,45 @@ a:hover {
 .main {
     background-color: rgb(204, 216, 227);
 }
-.about {
-    width: 50%;
+
+.profile {
+    width: calc(50% - 30px);
 }
+.about {
+    width: calc(50% - 20px);
+}
+.skills {
+    width: calc(50% - 20px);
+}
+.code {
+    width: calc(50% - 20px);
+}
+.education {
+    width: calc(50% - 20px);
+}
+.projects {
+    width: calc(50% - 20px);
+}
+.language {
+    width: calc(50% - 20px);
+}
+.contacts {
+    width: calc(50% - 20px);
+}
+
 .container-main {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
+    padding: 50px;
 }
-
+.container-about {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .photo-name {
     display: flex;
     align-items: center;
@@ -80,6 +106,8 @@ a:hover {
 }
 .js {
     background-color: antiquewhite;
+    padding: 0;
+    margin: 2;
 }
 
 .container-footer {
