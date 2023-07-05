@@ -4,7 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./style.css">
-<title>Vitaliy Kim</title>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="./assets/favicon/dragon.ico">
+<title>cv</title>
 </head>
-<body></body>
+<body>
+    <header class="header">
+            <div class="container-header">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#language">Languages</a></li>
+                        <li><a href="#code">My code</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main class="main">
+        <div class="container-main">
+            <section class="profile">
+                <div class="photo-name">
+                    <img src="./assets/img/photo-croped.jpg" alt="photo" class="img">
+                    <div class="title">
+                        <h1 class="name">Vitaliy Kim</h1>
+                        <p>Kazakhstan, Almaty</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h2>About me</h2>
+                <p>In my life, I have worked in various fields, each of which has provided me with valuable life experience and broadened my horizons. As far as I can remember, I have always enjoyed learning something new because learning is never too late. I have always been fascinated by different technologies, and even from my early childhood, my bookshelf was filled with science fiction books. Recently, I have immersed myself in learning programming, and it’s incredibly fascinating. My goal is to push the boundaries of my skills, refine my practice in building complex systems, and bring my imagination to life through real projects. I strive to expand my knowledge and expertise, and I am passionate about turning my ideas into tangible solutions.</p>
+            </section>
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Github</li>
+                    <li>ReactJS</li>
+                </ul>
+            </section>
+            <section class="education" id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Turan Universtity - Jurisprudence</li>
+                    <li><a href="https://www.freecodecamp.org/certification/KimV/javascript-algorithms-and-data-structures" target="_blank">FreeCodeCamp - JavaScript Algorithms and Data Structures</a></li>
+                </ul>
+            </section>
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="https://ki8vi.github.io/snake/" target="_blank">Snake - Pure JS</a></li>
+                    <li><a href="https://ki8vi.github.io/shop/" target="_blank">Store - React JS</a></li>
+                    <li><a href="https://ki8vi.github.io/didOrNot/" target="_blank">Task manager - Pure JS</a></li>
+                </ul>
+            </section>
+            <section class="language" id="language">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English: intermediate</li>
+                    <li>Korean: pre-intermediate</li>
+                </ul>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><a href="mailto:oneofbln@gmail.com" target="_blank">E-mail</a></li>
+                    <li><a href="https://t.me/keepinminded" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.linkedin.com/in/ki8vi/" target="_blank">Linkedin</a></li>
+                </ul>
+            </section>
+            <section class="code" id="code">
+                <h2>My code</h2>
+                <p>Find Highest Rank Number in an Array</p>
+<pre>
+ <code class="func">
+function highestRank(arr) {
+let out = []
+let hsh = {}
+for(let i = 0; i &lt; arr.length; i++) {
+    if(!hsh[arr[i]]) {
+    hsh[arr[i]] = 1
+    } else {
+    hsh[arr[i]]++
+    }
+}
+arr = Object.entries(hsh)
+const maxVal = Object.values(hsh).sort((a, b) => b-a)[0]
+for(let i = 0; i &lt; arr.length; i++) {
+    if(arr[i][1] === maxVal) {
+    out.push(+arr[i][0])
+    }
+}
+    return Math.max(...out)
+}
+ </code>
+</pre>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="https://rs.school/js/" target="_blank"><img class="rs-logo" src="https://rs.school/images/rs_school_js.svg" alt="rs-logo"></a>
+            <span>Created in 2023</span>
+            <a href="https://github.com/ki8vi" target="_blank"><img class="git-logo" src="./assets/svg/icons8-github.svg" alt="github-logo"></a>
+        </div>
+    </footer>
+</body>
 </html>
